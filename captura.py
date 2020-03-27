@@ -3,6 +3,10 @@ import datetime
 import argparse
 import os
 
+if not os.path.exists(r".\Imagens"):
+    os.makedirs(r".\Imagens")
+    os.makedirs(r".\Imagens\Tratados")
+
 ap = argparse.ArgumentParser()
 ap.add_argument("-n", "--nome", required=True,
 	help="Informe o nome da aula")
